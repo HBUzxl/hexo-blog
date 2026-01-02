@@ -129,18 +129,21 @@ widgets: ## Seven widgets in sidebar provided: search, info, category, tag, rece
 
 info:
   avatar: /img/avatar.jpg
-  discription: To be a better man.
+  discription: Have a good day.
   outlinkitem:
-    - name: twitter
-      outlink: https://twitter.com/username
-      message: Twitter
+    - name: square-x-twitter
+      outlink: https://x.com/HelloWorld417_
+      message: X/Twitter
     - name: envelope
-      outlink: mailto:admin@domain.com
+      outlink: mailto:zxl2024@qq.com
       message: Email
-    - name: github
+    - name: square-github
       outlink: https://github.com/HBUzxl
       message: Github
-    - name: rss
+    - name: weibo
+      outlink: https://weibo.com/u/7529198802
+      message: Weibo
+    - name: square-rss
       outlink: /atom.xml
       message: RSS
 
