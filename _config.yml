@@ -106,3 +106,17 @@ deploy:
 
 # 数学公式支持
 mathjax: true
+
+# Feed 插件配置
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content: true
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: icon.png
+  autodiscovery: true
+  template:
