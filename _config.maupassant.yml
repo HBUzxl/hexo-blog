@@ -131,21 +131,21 @@ info:
   avatar: /img/avatar.jpg
   discription: Have a good day.
   outlinkitem:
-    - name: square-x-twitter
+    - name: x-twitter
       outlink: https://x.com/HelloWorld417_
       message: X/Twitter
     - name: envelope
       outlink: mailto:zxl2024@qq.com
       message: Email
-    - name: square-github
+    - name: github
       outlink: https://github.com/HBUzxl
       message: Github
     - name: weibo
       outlink: https://weibo.com/u/7529198802
       message: Weibo
-    - name: square-rss
-      outlink: /atom.xml
-      message: RSS
+    # - name: rss
+    #   outlink: /atom.xml
+    #   message: RSS
 
 links:
   - title: 张晓良‘s Blog

@@ -5,8 +5,9 @@
     p #{theme.info.discription}
     - for (var i in theme.info.outlinkitem)
       - var iconName = theme.info.outlinkitem[i].name;
-      - var isBrand = ['square-x-twitter', 'square-github', 'weibo'].includes(iconName);
-      - var iconStyle = isBrand ? 'fa-brands' : 'fa-solid';
+      - var isBrand = ['x-twitter', 'github', 'weibo'].includes(iconName);
+      - var isRegular = ['envelope'].includes(iconName);
+      - var iconStyle = isBrand ? 'fa-brands' : (isRegular ? 'fa-regular' : 'fa-solid');
       - var iconClass = iconStyle + ' fa-' + iconName;
       a.info-icon(href=theme.info.outlinkitem[i].outlink, title=theme.info.outlinkitem[i].message, target='_blank', style='margin-inline:5px')
         i(class=iconClass, style='margin-inline:5px')
