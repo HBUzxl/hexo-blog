@@ -42,6 +42,13 @@ body {
     box-sizing: border-box; /* 防止 padding 撑大页面 */
 }
 
+@media print,
+screen and (max-width: 48em) {
+    body {
+        padding-bottom: 150px; /* 小屏幕增加页脚预留空间 */
+    }
+}
+
 .body_container {
     padding: 0 60px;
     max-width: 1150px;
