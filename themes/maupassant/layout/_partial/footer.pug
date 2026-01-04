@@ -1,9 +1,34 @@
-#footer= 'Copyright © ' + date(Date.now(), 'YYYY') + ' '
-  a(href=url_for('.'), rel='nofollow')= config.title + '.'
-  |  Powered by
-  a(rel='nofollow', target='_blank', href='https://hexo.io')  Hexo.
-  a(rel='nofollow', target='_blank', href='https://github.com/tufu9441/maupassant-hexo')  Theme
-  |  by
-  a(rel='nofollow', target='_blank', href='https://github.com/pagecho')  Cho.
-  if theme.icp
-    a(rel='nofollow', target='_blank', href='https://beian.miit.gov.cn/')=  theme.icp
+#footer
+  if theme.site_time && theme.site_time.enable
+    #site-time-container
+      span#timeDate 载入天数...
+      span#times 载入时分秒...
+      script.
+        function createtime() {
+          var now = new Date();
+          var startDate = "#{theme.site_time.start_date}";
+          var grt = new Date(startDate.replace(/-/g, '/'));
+          var nowTime = now.getTime();
+          var grtTime = grt.getTime();
+          var diff = nowTime - grtTime;
+          var dnum = Math.floor(diff / 1000 / 60 / 60 / 24);
+          var hnum = Math.floor((diff / 1000 / 60 / 60) % 24);
+          var mnum = Math.floor((diff / 1000 / 60) % 60);
+          var snum = Math.floor((diff / 1000) % 60);
+          if(String(hnum).length == 1) { hnum = "0" + hnum; }
+          if(String(mnum).length == 1) { mnum = "0" + mnum; }
+          if(String(snum).length == 1) { snum = "0" + snum; }
+          document.getElementById("timeDate").innerHTML = "本站已安全运行 " + dnum + " 天 ";
+          document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+        }
+        setInterval("createtime()", 1000);
+  div= 'Copyright © ' + date(Date.now(), 'YYYY') + ' '
+    a(href=url_for('.'), rel='nofollow')= config.title + '.'
+    |  Powered by
+    a(rel='nofollow', target='_blank', href='https://hexo.io')  Hexo.
+    a(rel='nofollow', target='_blank', href='https://github.com/tufu9441/maupassant-hexo')  Theme
+    |  by
+    a(rel='nofollow', target='_blank', href='https://github.com/pagecho')  Cho.
+    if theme.icp
+      a(rel='nofollow', target='_blank', href='https://beian.miit.gov.cn/')=  theme.icp
+  
