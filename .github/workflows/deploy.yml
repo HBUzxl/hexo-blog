@@ -30,8 +30,8 @@ jobs:
 
       - name: Clean and Generate
         run: |
-          hexo clean
-          hexo generate
+          pnpm hexo clean
+          pnpm hexo generate
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
