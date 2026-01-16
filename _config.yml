@@ -40,7 +40,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: true
+post_asset_folder: false  # 是否为每篇文章图片启用资源文件夹
 relative_link: false
 future: true
 syntax_highlighter: highlight.js
