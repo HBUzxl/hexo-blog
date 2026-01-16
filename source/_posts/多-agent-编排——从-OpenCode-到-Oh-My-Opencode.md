@@ -4,7 +4,7 @@ link: multi-agent-orchestration
 mathjax: true
 category:
   - [技术]
-toc: false
+toc: true
 date: 2026-01-16 17:41:04
 tags:
 description: 随着大型语言模型（LLM）能力的飞速发展，我们正在进入一个由 AI Agent 驱动的软件开发新时代。Agent，作为能够自主理解、规划并执行复杂任务的智能实体，正逐渐从理论走向实践，深刻改变着开发者与代码交互的方式。从最初的单体 Agent 辅助编码，到如今由多个专业 Agent 协同作战，多 Agent 系统（Multi-Agent Systems）已成为提升开发效率、解决复杂软件工程问题的关键。
