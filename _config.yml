@@ -115,3 +115,10 @@ feed:
   icon: icon.png
   autodiscovery: true
   template:
+
+# Sitemap 插件配置
+sitemap:
+  path: sitemap.xml
+  rel: false
+  tags: true
+  categories: true
